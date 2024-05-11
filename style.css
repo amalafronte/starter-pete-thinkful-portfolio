@@ -21,6 +21,10 @@ header {
   text-align: center;
 }
 
+.header-items {
+display: flex;
+}
+
 /* Containers */
 div {
   background-color: #eae2b7;
@@ -32,14 +36,36 @@ article {
   padding: 50px 0;
 }
 
+.about-container {
+  display: flex;
+}
+
+.about-container > div:nth-child(2) p,
+.about-container > div:nth-child(2) ul {
+  text-align: left;
+}
+
 article div {
   text-align: center;
   width: 100%;
 }
 
+#portfolio div {
+  display: flex;
+  gap: 10px;
+}
+
+#portfolio div section {
+  flex: 1;
+}
+
 /* Paragraphs */
 p {
   line-height: 1.5;
+}
+
+#portfolio p {
+  font-size: 14px;
 }
 
 /* Links */
@@ -49,6 +75,11 @@ a:link {
 
 a:hover {
   color: #f77f00;
+}
+
+nav {
+  display: flex;
+  align-items: center;
 }
 
 nav a {
